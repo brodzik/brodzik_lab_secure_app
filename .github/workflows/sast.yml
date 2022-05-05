@@ -23,4 +23,4 @@ jobs:
                 docker pull mixeway/scanner:latest
             - name: Run Scan
               run: |
-                docker run -e OSS_USERNAME=xobot37037@abincol.com -e OSS_KEY=f61c78c7f8edb47c686828775c0ddf5e9ef83634 -e MIXEWAY_URL=https://hub.mixeway.io -e MIXEWAY_KEY=0164f889-098f-4141-8635-5cf3759cce18 -e MIXEWAY_PROJECT_ID=80 -e MODE=STANDALONE -e MIXEWAY_PROJECT_NAME=brodzik_lab_secure_app -e COMMIT_ID=test -e BRANCH=master -v /opt/sources mixeway/scanner:latest
+                docker run -e OSS_USERNAME=xobot37037@abincol.com -e OSS_KEY=f61c78c7f8edb47c686828775c0ddf5e9ef83634 -e MIXEWAY_URL=https://hub.mixeway.io -e MIXEWAY_KEY=0164f889-098f-4141-8635-5cf3759cce18 -e MIXEWAY_PROJECT_ID=80 -e MODE=STANDALONE -e MIXEWAY_PROJECT_NAME=brodzik_lab_secure_app -e COMMIT_ID=test -e BRANCH=master -v /home/runner/work/brodzik_lab_secure_app/brodzik_lab_secure_app:/opt/sources mixeway/scanner:latest
